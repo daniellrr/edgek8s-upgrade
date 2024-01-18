@@ -3,8 +3,9 @@
       KUBECONFIG="/opt/kubeconfig/kubeconfig"
       TALOSCONFIG="/opt/talosconfig/talosconfig"
       SERVER_IP="192.168.1.109"
-      #UPGRADE_TALOS="true"
-      UPGRADE_KUBERENTES="true"
+      UPGRADE_TALOS="true"
+      TALOS_VERSION="v1.5.5"
+      #UPGRADE_KUBERENTES="true"
 
 check_talos_version_existence() {
     local version_url="https://github.com/siderolabs/talos/releases/tag/${TALOS_VERSION}"
